@@ -110,40 +110,7 @@ class Home extends Component {
           onBottomVisible={this.unStickTopMenu}
           once={false}
         >
-          <Menu
-            borderless
-            fixed={menuFixed && 'top'}
-            style={menuFixed ? fixedMenuStyle : menuStyle}
-          >
-            <Container text>
-              <Menu.Item>
-                <Image size='mini' src='/logo.png' />
-              </Menu.Item>
-              <Menu.Item header>Project Name</Menu.Item>
-              <Menu.Item as='a'>Blog</Menu.Item>
-              <Menu.Item as='a'>Articles</Menu.Item>
 
-              <Menu.Menu position='right'>
-                <Dropdown text='Dropdown' pointing className='link item'>
-                  <Dropdown.Menu>
-                    <Dropdown.Item>List Item</Dropdown.Item>
-                    <Dropdown.Item>List Item</Dropdown.Item>
-                    <Dropdown.Divider />
-                    <Dropdown.Header>Header Item</Dropdown.Header>
-                    <Dropdown.Item>
-                      <i className='dropdown icon' />
-                      <span className='text'>Submenu</span>
-                      <Dropdown.Menu>
-                        <Dropdown.Item>List Item</Dropdown.Item>
-                        <Dropdown.Item>List Item</Dropdown.Item>
-                      </Dropdown.Menu>
-                    </Dropdown.Item>
-                    <Dropdown.Item>List Item</Dropdown.Item>
-                  </Dropdown.Menu>
-                </Dropdown>
-              </Menu.Menu>
-            </Container>
-          </Menu>
         </Visibility>
 
         <Container text>
@@ -203,60 +170,66 @@ class Home extends Component {
           { _.times(2, i => <Paragraph key={i} />) }
         </Container>
 
-        <Segment
-          inverted
-          style={{ margin: '5em 0em 0em', padding: '5em 0em' }}
-          vertical
-        >
-          <Container textAlign='center'>
-            <Grid columns={4} divided stackable inverted>
-              <Grid.Row>
-                <Grid.Column>
-                  <Header inverted as='h4' content='Group 1' />
-                  <List link inverted>
-                    <List.Item as='a'>Link One</List.Item>
-                    <List.Item as='a'>Link Two</List.Item>
-                    <List.Item as='a'>Link Three</List.Item>
-                    <List.Item as='a'>Link Four</List.Item>
-                  </List>
-                </Grid.Column>
-                <Grid.Column>
-                  <Header inverted as='h4' content='Group 2' />
-                  <List link inverted>
-                    <List.Item as='a'>Link One</List.Item>
-                    <List.Item as='a'>Link Two</List.Item>
-                    <List.Item as='a'>Link Three</List.Item>
-                    <List.Item as='a'>Link Four</List.Item>
-                  </List>
-                </Grid.Column>
-                <Grid.Column>
-                  <Header inverted as='h4' content='Group 3' />
-                  <List link inverted>
-                    <List.Item as='a'>Link One</List.Item>
-                    <List.Item as='a'>Link Two</List.Item>
-                    <List.Item as='a'>Link Three</List.Item>
-                    <List.Item as='a'>Link Four</List.Item>
-                  </List>
-                </Grid.Column>
-                <Grid.Column>
-                  <Header inverted as='h4' content='Footer Header' />
-                  <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
-                </Grid.Column>
-              </Grid.Row>
-            </Grid>
-            <Divider inverted section />
-            <Image src='/logo.png' centered size='mini' />
-            <List horizontal inverted divided link>
-              <List.Item as='a' href='#'>Site Map</List.Item>
-              <List.Item as='a' href='#'>Contact Us</List.Item>
-              <List.Item as='a' href='#'>Terms and Conditions</List.Item>
-              <List.Item as='a' href='#'>Privacy Policy</List.Item>
-            </List>
-          </Container>
-        </Segment>
+
       </div>
     )
   }
 }
 
 export default Home;
+
+
+
+
+
+// <Segment
+//   inverted
+//   style={{ margin: '5em 0em 0em', padding: '5em 0em' }}
+//   vertical
+// >
+//   <Container textAlign='center'>
+//     <Grid columns={4} divided stackable inverted>
+//       <Grid.Row>
+//         <Grid.Column>
+//           <Header inverted as='h4' content='Group 1' />
+//           <List link inverted>
+//             <List.Item as='a'>Link One</List.Item>
+//             <List.Item as='a'>Link Two</List.Item>
+//             <List.Item as='a'>Link Three</List.Item>
+//             <List.Item as='a'>Link Four</List.Item>
+//           </List>
+//         </Grid.Column>
+//         <Grid.Column>
+//           <Header inverted as='h4' content='Group 2' />
+//           <List link inverted>
+//             <List.Item as='a'>Link One</List.Item>
+//             <List.Item as='a'>Link Two</List.Item>
+//             <List.Item as='a'>Link Three</List.Item>
+//             <List.Item as='a'>Link Four</List.Item>
+//           </List>
+//         </Grid.Column>
+//         <Grid.Column>
+//           <Header inverted as='h4' content='Group 3' />
+//           <List link inverted>
+//             <List.Item as='a'>Link One</List.Item>
+//             <List.Item as='a'>Link Two</List.Item>
+//             <List.Item as='a'>Link Three</List.Item>
+//             <List.Item as='a'>Link Four</List.Item>
+//           </List>
+//         </Grid.Column>
+//         <Grid.Column>
+//           <Header inverted as='h4' content='Footer Header' />
+//           <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+//         </Grid.Column>
+//       </Grid.Row>
+//     </Grid>
+//     <Divider inverted section />
+//
+//     <List horizontal inverted divided link>
+//       <List.Item as='a' href='#'>Site Map</List.Item>
+//       <List.Item as='a' href='#'>Contact Us</List.Item>
+//       <List.Item as='a' href='#'>Terms and Conditions</List.Item>
+//       <List.Item as='a' href='#'>Privacy Policy</List.Item>
+//     </List>
+//   </Container>
+// </Segment>
