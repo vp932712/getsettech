@@ -1,14 +1,30 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import { Menu, Segment } from 'semantic-ui-react'
 
+export default class Nav extends Component {
+  state = { activeItem: 'home' }
 
-class Nav extends Component {
+  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+
   render() {
-    return (
-      <div>
+    const { activeItem } = this.state
 
-      </div>
-    );
+    return (
+      <Segment inverted>
+        <Menu inverted pointing secondary>
+          <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick} />
+          <Menu.Item
+            name='messages'
+            active={activeItem === 'messages'}
+            onClick={this.handleItemClick}
+          />
+          <Menu.Item
+            name='friends'
+            active={activeItem === 'friends'}
+            onClick={this.handleItemClick}
+          />
+        </Menu>
+      </Segment>
+    )
   }
 }
-
-export default Nav;
