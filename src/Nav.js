@@ -16,17 +16,17 @@ export default class Nav extends Component {
           <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick} />
           <Menu.Item
             name="IT Services"
-            active={activeItem === 'messages'}
+            active={activeItem === 'IT Services'}
             onClick={this.handleItemClick}
           />
           <Menu.Item
             name='About'
-            active={activeItem === 'friends'}
+            active={activeItem === 'About'}
             onClick={this.handleItemClick}
           />
           <Menu.Item
             name='contact'
-            active={activeItem === 'messages'}
+            active={activeItem === 'contact'}
             onClick={this.handleItemClick}
           />
         </Menu>

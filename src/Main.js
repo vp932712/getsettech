@@ -4,7 +4,7 @@ import Home from "./Home.js"
 import ITServices from "./ITServices.js"
 import AboutUs from "./AboutUs.js"
 import CompanyImage from "./CompanyImage.js"
-
+import Footer from "./Footer.js"
 
 
 class Main extends Component {
@@ -16,6 +16,7 @@ class Main extends Component {
         <Home />
         <ITServices />
         <AboutUs />
+        <Footer />
       </div>
     );
   }
