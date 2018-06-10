@@ -21,8 +21,11 @@ class Contact extends Component {
     <Form.Input label='Address' placeholder='Address' />
     <Form.Input label='Phone' placeholder='Phone' />
   </Form.Group>
+  <Form.Input label="E-Mail" placeholder="E-Mail" />
+  <Form.TextArea label="Message" placeholder="Message" />
   <Form.Checkbox label='I agree to the Terms and Conditions' />
   <Button type='submit'>Submit</Button>
+
 </Form>
       </Grid.Column>
       <Grid.Column>
