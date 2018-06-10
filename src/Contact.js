@@ -7,8 +7,8 @@ class Contact extends Component {
       <div>
       <Container textAlign='justified'>
 
-       <Header  textAlign='center'as='h1'>Dogs Roles with Humans</Header>
-       <Header  textAlign='center'as='h4'>Dogs Roles with Humans</Header>
+       <Header  textAlign='center'as='h1'>CONTACT US</Header>
+       <Header  textAlign='center'as='h4'>GET IN TOUCH</Header>
       <Grid divided='vertically'>
     <Grid.Row columns={2}>
       <Grid.Column>
